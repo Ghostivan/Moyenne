@@ -27,7 +27,7 @@
             android:label="@string/title_activity_form_administrator" >
         </activity>
         <activity
-            android:name="esgi.directmoyenne.forms.FormAdministrator"
+            android:name=".forms.FormAdministrator"
             android:label="@string/title_activity_form_administrator"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -35,12 +35,20 @@
                 android:value="esgi.directmoyenne.MainActivity" />
         </activity>
         <activity
-            android:name="esgi.directmoyenne.forms.FormStudent"
+            android:name=".forms.FormStudent"
             android:label="@string/title_activity_form_student"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="esgi.directmoyenne.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ConsultNoteStudent"
+            android:label="@string/title_activity_consult_note_student"
+            android:parentActivityName=".viewStudent" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="esgi.directmoyenne.viewStudent" />
         </activity>
     </application>
 

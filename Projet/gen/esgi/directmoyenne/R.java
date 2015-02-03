@@ -1765,9 +1765,10 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f03001a;
     }
     public static final class menu {
-        public static final int form_administrator=0x7f0c0000;
-        public static final int form_student=0x7f0c0001;
-        public static final int main=0x7f0c0002;
+        public static final int consult_note_student=0x7f0c0000;
+        public static final int form_administrator=0x7f0c0001;
+        public static final int form_student=0x7f0c0002;
+        public static final int main=0x7f0c0003;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1864,6 +1865,7 @@ containing a value of this type.
          */
         public static final int titleShowMoyenne=0x7f0a0022;
         public static final int titleStudent=0x7f0a0027;
+        public static final int title_activity_consult_note_student=0x7f0a0033;
         public static final int title_activity_form_administrator=0x7f0a0031;
         public static final int title_activity_form_student=0x7f0a0032;
         /**  Page Formulaire Administrateur 

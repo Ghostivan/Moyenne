@@ -52,5 +52,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_form_administrator">Formulaire Administrateur</string>
     <string name="title_activity_form_student">Formulaire Etudiant</string>
+    <string name="title_activity_consult_note_student">ConsultNoteStudent</string>
 
 </resources>

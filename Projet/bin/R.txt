@@ -436,9 +436,10 @@ int layout activity_form_administrator 0x7f030017
 int layout activity_form_student 0x7f030018
 int layout activity_main 0x7f030019
 int layout support_simple_spinner_dropdown_item 0x7f03001a
-int menu form_administrator 0x7f0c0000
-int menu form_student 0x7f0c0001
-int menu main 0x7f0c0002
+int menu consult_note_student 0x7f0c0000
+int menu form_administrator 0x7f0c0001
+int menu form_student 0x7f0c0002
+int menu main 0x7f0c0003
 int string abc_action_bar_home_description 0x7f0a0001
 int string abc_action_bar_home_description_format 0x7f0a0005
 int string abc_action_bar_home_subtitle_description_format 0x7f0a0006
@@ -480,6 +481,7 @@ int string titleMatiere 0x7f0a0026
 int string titleNote 0x7f0a0025
 int string titleShowMoyenne 0x7f0a0022
 int string titleStudent 0x7f0a0027
+int string title_activity_consult_note_student 0x7f0a0033
 int string title_activity_form_administrator 0x7f0a0031
 int string title_activity_form_student 0x7f0a0032
 int string txtAdminInput 0x7f0a001d
