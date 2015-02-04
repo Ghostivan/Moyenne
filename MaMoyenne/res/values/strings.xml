@@ -36,9 +36,11 @@
     <string name="txtCommentaire">Commentaires</string>
 
     <!-- Pages Administrateur -->
+    <string name="titleMainPageAdmin">Bienvenue sur votre espace</string>
     <string name="titleNote">Saisir une note</string>
     <string name="titleMatiere">Saisir une matière</string>
     <string name="titleStudent">Saisir un élève</string>
+    <string name="modifNote">Modifier une note</string>
     <string name="titleCommentaire">Saisir un commentaire</string>
     <string name="newNote">Nouvelle note</string>
     <string name="newCommentaire">Ecrire le commentaire dans cette zone</string>

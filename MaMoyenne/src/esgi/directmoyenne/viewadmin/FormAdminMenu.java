@@ -1,14 +1,14 @@
 package esgi.directmoyenne.viewadmin;
 
 import com.example.mamoyenne.R;
-import com.example.mamoyenne.R.id;
-import com.example.mamoyenne.R.layout;
-import com.example.mamoyenne.R.menu;
-
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class FormAdminMenu extends Activity {
 
@@ -36,4 +36,54 @@ public class FormAdminMenu extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	public void sendFormAdminSaisirEleve(View view) {
+		System.out.println("Administrator Saisir Eleve Clicked !");
+		Button btListe = (Button) findViewById(R.id.newStudent);
+		btListe.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(FormAdminMenu.this, FormAdminSaisirEleve.class);
+				startActivity(intent);
+				finish();
+			}
+		});
+	}
+	
+	public void sendFormAdminSaisirNote(View view) {
+		System.out.println("Administrator Saisir Note Clicked !");
+		Button btListe = (Button) findViewById(R.id.newNote);
+		btListe.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(FormAdminMenu.this, FormAdminSaisirNote.class);
+				startActivity(intent);
+				finish();
+			}
+		});
+	}
+	
+	public void sendFormAdminSaisirMatiere(View view) {
+		System.out.println("Administrator Saisir Matiere Clicked !");
+		Button btListe = (Button) findViewById(R.id.newMatiere);
+		btListe.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(FormAdminMenu.this, FromAdminSaisirMatiere.class);
+				startActivity(intent);
+				finish();
+			}
+		});
+	}
+	
+	public void sendFormAdminModifNote(View view) {
+		System.out.println("Administrator Modifier Note Clicked !");
+		Button btListe = (Button) findViewById(R.id.modifNote);
+		btListe.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(FormAdminMenu.this, FormAdminModifierNote.class);
+				startActivity(intent);
+				finish();
+			}
+		});
+	}
+
+
 }
