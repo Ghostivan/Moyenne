@@ -34,14 +34,24 @@ public final class R {
         public static final int textView1=0x7f080000;
     }
     public static final class layout {
-        public static final int activity_form_administrator=0x7f030000;
-        public static final int activity_form_student=0x7f030001;
-        public static final int activity_main=0x7f030002;
+        public static final int activity_form_admin_menu=0x7f030000;
+        public static final int activity_form_admin_modifier_note=0x7f030001;
+        public static final int activity_form_admin_saisir_eleve=0x7f030002;
+        public static final int activity_form_admin_saisir_note=0x7f030003;
+        public static final int activity_form_administrator=0x7f030004;
+        public static final int activity_form_student=0x7f030005;
+        public static final int activity_from_admin_saisir_matiere=0x7f030006;
+        public static final int activity_main=0x7f030007;
     }
     public static final class menu {
-        public static final int form_administrator=0x7f070000;
-        public static final int form_student=0x7f070001;
-        public static final int main=0x7f070002;
+        public static final int form_admin_menu=0x7f070000;
+        public static final int form_admin_modifier_note=0x7f070001;
+        public static final int form_admin_saisir_eleve=0x7f070002;
+        public static final int form_admin_saisir_note=0x7f070003;
+        public static final int form_administrator=0x7f070004;
+        public static final int form_student=0x7f070005;
+        public static final int from_admin_saisir_matiere=0x7f070006;
+        public static final int main=0x7f070007;
     }
     public static final class string {
         public static final int action_settings=0x7f05001f;
@@ -83,8 +93,13 @@ public final class R {
         public static final int titleShowMoyenne=0x7f050012;
         public static final int titleStudent=0x7f050017;
         public static final int title_activity_consult_note_student=0x7f050023;
+        public static final int title_activity_form_admin_menu=0x7f050025;
+        public static final int title_activity_form_admin_modifier_note=0x7f050028;
+        public static final int title_activity_form_admin_saisir_eleve=0x7f050027;
+        public static final int title_activity_form_admin_saisir_note=0x7f050024;
         public static final int title_activity_form_administrator=0x7f050021;
         public static final int title_activity_form_student=0x7f050022;
+        public static final int title_activity_from_admin_saisir_matiere=0x7f050026;
         /**  Page Formulaire Administrateur 
          */
         public static final int txtAdminInput=0x7f05000d;

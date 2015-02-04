@@ -53,5 +53,10 @@
     <string name="title_activity_form_administrator">Formulaire Administrateur</string>
     <string name="title_activity_form_student">Formulaire Etudiant</string>
     <string name="title_activity_consult_note_student">ConsultNoteStudent</string>
+    <string name="title_activity_form_admin_saisir_note">FormAdminSaisirNote</string>
+    <string name="title_activity_form_admin_menu">FormAdminMenu</string>
+    <string name="title_activity_from_admin_saisir_matiere">FromAdminSaisirMatiere</string>
+    <string name="title_activity_form_admin_saisir_eleve">FormAdminSaisirEleve</string>
+    <string name="title_activity_form_admin_modifier_note">FormAdminModifierNote</string>
 
 </resources>
