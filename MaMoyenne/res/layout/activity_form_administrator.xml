@@ -9,41 +9,42 @@
     tools:context="esgi.directmoyenne.forms.FormAdministrator" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/title_activity_form_administrator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title_activity_form_administrator" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/txtAdminInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/title_activity_form_administrator"
+        android:layout_alignRight="@+id/btConfirm"
+        android:layout_below="@+id/title_activity_form_administrator"
         android:layout_marginTop="69dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/txtStudentInput" />
-    
+        android:text="@string/txtAdminInput" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtAdminPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/txtAdminInput"
+        android:layout_alignRight="@+id/txtAdminInput"
+        android:layout_below="@+id/txtAdminInput"
         android:layout_marginTop="70dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="@string/txtStudentPassword" />
+        android:text="@string/txtAdminPassword" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/txtAdminPassword"
         android:layout_marginTop="100dp"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_toRightOf="@+id/title_activity_form_administrator"
         android:text="@string/btConfirm" />
 
 </RelativeLayout>
