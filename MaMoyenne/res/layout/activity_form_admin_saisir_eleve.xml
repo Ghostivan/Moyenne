@@ -9,8 +9,34 @@
     tools:context="esgi.directmoyenne.viewadmin.FormAdminSaisirEleve" >
 
     <TextView
+        android:id="@+id/titrePageNomEleve"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text="@string/titleStudent" />
+
+    <EditText
+        android:id="@+id/saisirNomEleve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titrePageNomEleve"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/validerNomEleve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saisirNomEleve"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="@string/btConfirm" />
 
 </RelativeLayout>
