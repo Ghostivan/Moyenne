@@ -9,8 +9,57 @@
     tools:context="esgi.directmoyenne.viewadmin.FromAdminSaisirMatiere" >
 
     <TextView
+        android:id="@+id/titreMatiere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/titleMatiere" />
+
+    <EditText
+        android:id="@+id/saisirMatiere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titreMatiere"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/saisirCoef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/saisirMatiere"
+        android:layout_centerVertical="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saisirCoef"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:text="@string/btConfirm" />
+
+    <TextView
+        android:id="@+id/matiere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/saisirMatiere"
+        android:layout_below="@+id/titreMatiere"
+        android:layout_marginTop="34dp"
+        android:text="Matière :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/coef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saisirCoef"
+        android:layout_alignLeft="@+id/saisirCoef"
+        android:text="Coefficient : "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>
