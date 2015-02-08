@@ -56,6 +56,7 @@ public class MainActivity extends Activity {
 	public void sendFormStudent(View view) {
 		System.out.println("Student Clicked !");
 		Button btListe = (Button) findViewById(R.id.bt_student);
+		//String txtStudent = (String) findViewById(R.id);
 		btListe.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent(MainActivity.this, FormStudent.class);
