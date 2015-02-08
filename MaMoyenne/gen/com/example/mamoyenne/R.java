@@ -25,6 +25,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int action_settings=0x7f080019;
         public static final int btConfirm=0x7f08000b;
         public static final int bt_admin=0x7f080017;
@@ -33,10 +34,20 @@ public final class R {
         public static final int coef=0x7f080015;
         public static final int disconnect=0x7f080002;
         public static final int matiere=0x7f080014;
+=======
+        public static final int action_settings=0x7f08000c;
+        public static final int bt_admin=0x7f08000a;
+        public static final int bt_student=0x7f08000b;
+        public static final int button1=0x7f080008;
+        public static final int disconnect=0x7f080002;
+        public static final int editText1=0x7f080006;
+        public static final int editText2=0x7f080007;
+>>>>>>> dbfdc4c37a0b372f8a9c2ca27eee8d63189031ef
         public static final int modifNote=0x7f080001;
         public static final int newMatiere=0x7f080003;
         public static final int newNote=0x7f080004;
         public static final int newStudent=0x7f080005;
+<<<<<<< HEAD
         public static final int saisirCoef=0x7f080012;
         public static final int saisirMatiere=0x7f080011;
         public static final int saisirNomEleve=0x7f080007;
@@ -51,6 +62,10 @@ public final class R {
         public static final int txtStudentInput=0x7f08000e;
         public static final int txtStudentPassword=0x7f08000f;
         public static final int validerNomEleve=0x7f080008;
+=======
+        public static final int textView1=0x7f080000;
+        public static final int titleHomePage=0x7f080009;
+>>>>>>> dbfdc4c37a0b372f8a9c2ca27eee8d63189031ef
     }
     public static final class layout {
         public static final int activity_form_admin_menu=0x7f030000;
