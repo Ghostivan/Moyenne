@@ -24,9 +24,11 @@ public class FormStudent extends Activity {
 		btConfirm.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				EditText name = (EditText) findViewById(R.id.txtStudentInput);
-				System.out.println(name.getText());
+				if(name.getText().length() == 0){
+					System.out.println(name.getText());
+				}else{
+			    }
 			}
 		});
-	}
-	
+	}	
 }
