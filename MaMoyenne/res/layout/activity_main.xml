@@ -14,28 +14,39 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:text="@string/titleHomePage" />
 
     <Button
-        android:id="@+id/bt_student"
+        android:id="@+id/newNote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bt_admin"
-        android:layout_alignRight="@+id/bt_admin"
-        android:layout_below="@+id/titleHomePage"
-        android:layout_marginTop="49dp"
-        android:onClick="sendFormStudent"
-        android:text="@string/linkFormStudent" />
+        android:layout_alignLeft="@+id/newMatiere"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/consultNotes"
+        android:layout_marginBottom="141dp"
+        android:onClick="sendFormNote"
+        android:text="@string/titleNote" />
 
     <Button
-        android:id="@+id/bt_admin"
+        android:id="@+id/newMatiere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bt_student"
+        android:layout_above="@+id/newNote"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
-        android:onClick="sendFormAdmin"
-        android:text="@string/linkFormAdmin" />
+        android:layout_marginBottom="22dp"
+        android:onClick="sendFormMatiere"
+        android:text="@string/titleMatiere" />
+
+    <Button
+        android:id="@+id/consultNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newMatiere"
+        android:layout_alignLeft="@+id/newMatiere"
+        android:layout_alignRight="@+id/newMatiere"
+        android:layout_marginBottom="18dp"
+        android:onClick="sendFormModifNote"
+        android:text="@string/voirNotes" />
 
 </RelativeLayout>

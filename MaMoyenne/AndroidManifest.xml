@@ -39,15 +39,15 @@
                 android:value="esgi.directmoyenne.MainActivity" />
         </activity>
         <activity
-            android:name="esgi.directmoyenne.viewadmin.FormAdminSaisirNote"
+            android:name="esgi.directmoyenne.view.FormSaisirNote"
             android:label="@string/title_activity_form_admin_saisir_note"
-            android:parentActivityName="esgi.directmoyenne.viewadmin.FormAdminMenu" >
+            android:parentActivityName="esgi.directmoyenne.view.FormAdminMenu" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="esgi.directmoyenne.forms.FormAdministrator" />
         </activity>
         <activity
-            android:name="esgi.directmoyenne.viewadmin.FormAdminMenu"
+            android:name="esgi.directmoyenne.view.FormAdminMenu"
             android:label="@string/title_activity_form_admin_menu"
             android:parentActivityName="esgi.directmoyenne.forms.FormAdministrator" >
             <meta-data
@@ -55,25 +55,9 @@
                 android:value="esgi.directmoyenne.forms.FormAdministrator" />
         </activity>
         <activity
-            android:name="esgi.directmoyenne.viewadmin.FromAdminSaisirMatiere"
+            android:name="esgi.directmoyenne.view.FromSaisirMatiere"
             android:label="@string/title_activity_from_admin_saisir_matiere"
-            android:parentActivityName="esgi.directmoyenne.viewadmin.FormAdminMenu" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="esgi.directmoyenne.viewadmin.FormAdminMenu" />
-        </activity>
-        <activity
-            android:name="esgi.directmoyenne.viewadmin.FormAdminSaisirEleve"
-            android:label="@string/title_activity_form_admin_saisir_eleve"
-            android:parentActivityName="esgi.directmoyenne.viewadmin.FormAdminMenu" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="esgi.directmoyenne.viewadmin.FormAdminMenu" />
-        </activity>
-        <activity
-            android:name="esgi.directmoyenne.viewadmin.FormAdminModifierNote"
-            android:label="@string/title_activity_form_admin_modifier_note"
-            android:parentActivityName="esgi.directmoyenne.viewadmin.FormAdminMenu" >
+            android:parentActivityName="esgi.directmoyenne.view.FormAdminMenu" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="esgi.directmoyenne.viewadmin.FormAdminMenu" />

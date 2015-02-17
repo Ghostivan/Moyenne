@@ -2,8 +2,8 @@ package esgi.directmoyenne;
 
 import com.example.mamoyenne.R;
 
-import esgi.directmoyenne.forms.FormAdministrator;
-import esgi.directmoyenne.forms.FormStudent;
+import esgi.directmoyenne.view.FormSaisirNote;
+import esgi.directmoyenne.view.FromSaisirMatiere;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,30 +39,30 @@ public class MainActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
-	public void sendFormAdmin(View view) {
-		System.out.println("Administrator Clicked !");
-		Button btListe = (Button) findViewById(R.id.bt_admin);
+	
+	public void sendFormNote(View view) {
+		System.out.println("Notes Clicked !");
+		Button btListe = (Button) findViewById(R.id.newNote);
 		btListe.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this,
-						FormAdministrator.class);
+				Intent intent = new Intent(MainActivity.this, FormSaisirNote.class);
 				startActivity(intent);
 				finish();
 			}
 		});
 	}
-
-	public void sendFormStudent(View view) {
-		System.out.println("Student Clicked !");
-		Button btListe = (Button) findViewById(R.id.bt_student);
-		//String txtStudent = (String) findViewById(R.id);
+	
+	public void sendFormMatiere(View view) {
+		System.out.println("Notes Clicked !");
+		Button btListe = (Button) findViewById(R.id.newMatiere);
 		btListe.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this, FormStudent.class);
+				Intent intent = new Intent(MainActivity.this, FromSaisirMatiere.class);
 				startActivity(intent);
 				finish();
 			}
 		});
 	}
+	
 }
+

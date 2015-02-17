@@ -1,4 +1,4 @@
-package esgi.directmoyenne.viewadmin;
+package esgi.directmoyenne.view;
 
 import com.example.mamoyenne.R;
 import com.example.mamoyenne.R.id;
@@ -10,18 +10,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class FromAdminSaisirMatiere extends Activity {
+public class FormSaisirNote extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_from_admin_saisir_matiere);
+		setContentView(R.layout.activity_form_saisir_note);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.from_admin_saisir_matiere, menu);
+		getMenuInflater().inflate(R.menu.form_admin_saisir_note, menu);
 		return true;
 	}
 

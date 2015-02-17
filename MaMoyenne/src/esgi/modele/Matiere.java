@@ -2,40 +2,42 @@ package esgi.modele;
 
 public class Matiere {
 	
-	private String idMatiere;
-	private String nomMatiere;
-	private String coefMatiere;
+	private long id;
+	private String nom;
+	private String coef;
 	
-	public Matiere(String idMatiere, String nomMatiere, String coefMatiere) {
+	public Matiere(long idMatiere, String nomMatiere, String coefMatiere) {
 		super();
-		this.idMatiere = idMatiere;
-		this.nomMatiere = nomMatiere;
-		this.coefMatiere = coefMatiere;
-	}
-
-	public String getIdMatiere() {
-		return idMatiere;
+		this.id = idMatiere;
+		this.nom = nomMatiere;
+		this.coef= coefMatiere;
 	}
 	
-	public void setIdMatiere(String idMatiere) {
-		this.idMatiere = idMatiere;
+	public Matiere(){
+		
 	}
-
-	public String getNomMatiere() {
-		return nomMatiere;
-	}
-
-	public void setNomMatiere(String nomMatiere) {
-		this.nomMatiere = nomMatiere;
-	}
-
-	public String getCoefMatiere() {
-		return coefMatiere;
-	}
-
-	public void setCoefMatiere(String coefMatiere) {
-		this.coefMatiere = coefMatiere;
+	public long getId() {
+		return id;
 	}
 	
+	public void setId(long idMatiere) {
+		this.id = idMatiere;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nomMatiere) {
+		this.nom = nomMatiere;
+	}
+
+	public String getCoef() {
+		return coef;
+	}
+
+	public void setCoef(String coefMatiere) {
+		this.coef = coefMatiere;
+	}
 	
 }
