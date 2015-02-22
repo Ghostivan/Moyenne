@@ -46,13 +46,13 @@ public class ArrayAdapterMatiere extends ArrayAdapter<Matiere> {
 		textViewMatiere.setText(matiere.getNom());
 		
 		TextView textViewCoef = (TextView) convertView.findViewById(R.id.coef);
-		textViewCoef.setText(matiere.getCoef());
+		textViewCoef.setText(""+matiere.getCoef());
 		
 		TextView textViewNotes = (TextView) convertView.findViewById(R.id.notes);
 		textViewNotes.setText(matiere.getMesNotes());
 		
 		TextView textViewMoyenne = (TextView) convertView.findViewById(R.id.moyenne);
-		textViewMoyenne.setText(matiere.getMoyenne());
+		textViewMoyenne.setText(""+matiere.getMoyenne());
 
 		return convertView;
 
