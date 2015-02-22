@@ -3,35 +3,31 @@
 
     <!-- Page Global -->
     <string name="titleHomePage"><h2>Direct Moyenne</h2></string>
-    <string name="titleHomePageAccount">Bienvenue sur votre espace </string>
-    <string name="btConfirm">CONFIRMER</string>
-
-    <!-- Page Formulaire Error -->
-    <string name="linkReturnInitialForm"><u>Veuillez retourner au formulaire</u></string>
-
-    <!-- Page Consulter Note - Etudiant -->
+    <string name="linkShowMoyenne">Consulter votre moyenne</string>
     <!-- Page Voir Moyenne - Etudiant -->
     <string name="titleShowMoyenne"><b>Moyenne actuelle de </b></string>
-    <string name="txtMoyenne">Moyenne</string>
+    <string name="txtMoyenne">Calculer la Moyenne</string>
 
     <!-- Pages Administrateur -->
     <string name="titleMainPageAdmin">Bienvenue sur votre espace</string>
     <string name="titleNote">Saisir une note</string>
     <string name="titleMatiere">Saisir une matière</string>
-    <string name="voirNotes">Voir mes notes</string>
+    <string name="titleStudent">Saisir un élève</string>
+    <string name="modifNote">Modifier une note</string>
+    <string name="titleCommentaire">Saisir un commentaire</string>
     <string name="newNote">Nouvelle note</string>
+    <string name="newCommentaire">Ecrire le commentaire dans cette zone</string>
     <string name="newMatiere">Nouvelle matière</string>
     <string name="newMatiereCoef">Nouveau coefficient</string>
+    <string name="newStudent">Nouvel élève</string>
 
     <!-- Global Parameters -->
     <string name="app_name">DirectMoyenne</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_add_matiere">AddMatiereActivity</string>
+    <string name="valid">Valider</string>
+    <string name="title_activity_dashboard">DashBoardActivity</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_form_administrator">Formulaire Administrateur</string>
-    <string name="title_activity_form_student">Formulaire Etudiant</string>
-    <string name="title_activity_consult_note_student">ConsultNoteStudent</string>
-    <string name="title_activity_form_admin_saisir_note">FormAdminSaisirNote</string>
-    <string name="title_activity_form_admin_menu">FormAdminMenu</string>
-    <string name="title_activity_from_admin_saisir_matiere">FromAdminSaisirMatiere</string>
+    <string name="title_activity_add_notes">AddNotesActivity</string>
 
 </resources>

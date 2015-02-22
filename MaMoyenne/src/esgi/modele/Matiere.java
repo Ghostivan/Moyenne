@@ -4,15 +4,19 @@ public class Matiere {
 	
 	private long id;
 	private String nom;
-	private String coef;
+	private int coef;
 	
-	public Matiere(long idMatiere, String nomMatiere, String coefMatiere) {
+	public Matiere(long idMatiere, String nomMatiere, int coefMatiere) {
 		super();
 		this.id = idMatiere;
 		this.nom = nomMatiere;
 		this.coef= coefMatiere;
 	}
-	
+	public Matiere(String nomMatiere, int coefMatiere) {
+		super();
+		this.nom = nomMatiere;
+		this.coef= coefMatiere;
+	}
 	public Matiere(){
 		
 	}
@@ -32,12 +36,13 @@ public class Matiere {
 		this.nom = nomMatiere;
 	}
 
-	public String getCoef() {
+	public int getCoef() {
 		return coef;
 	}
 
-	public void setCoef(String coefMatiere) {
+	public void setCoef(int coefMatiere) {
 		this.coef = coefMatiere;
 	}
+	
 	
 }

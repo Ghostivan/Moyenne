@@ -10,6 +10,12 @@ package com.example.mamoyenne;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int black=0x7f040003;
+        public static final int blue=0x7f040000;
+        public static final int grey=0x7f040001;
+        public static final int white=0x7f040002;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
@@ -18,76 +24,85 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
+        public static final int h1=0x7f050002;
+        public static final int h2=0x7f050003;
+        public static final int h3=0x7f050004;
+        public static final int large_bt_height=0x7f050007;
+        public static final int large_bt_width=0x7f050006;
+        public static final int simple_text=0x7f050005;
+        public static final int small_bt_height=0x7f050009;
+        public static final int small_bt_width=0x7f050008;
+        public static final int small_sp_height=0x7f05000b;
+        public static final int small_sp_width=0x7f05000a;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int background_paper=0x7f020000;
+        public static final int calcul=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int matiere=0x7f020003;
+        public static final int notes=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000c;
-        public static final int button2=0x7f080006;
-        public static final int consultNotes=0x7f08000b;
-        public static final int editText1=0x7f080005;
-        public static final int editText2=0x7f080007;
-        public static final int linearLayout1=0x7f080000;
-        public static final int newMatiere=0x7f08000a;
-        public static final int newNote=0x7f080009;
-        public static final int spinner2=0x7f080003;
-        public static final int textView2=0x7f080002;
-        public static final int textView3=0x7f080004;
-        public static final int textView5=0x7f080001;
-        public static final int titleHomePage=0x7f080008;
+        public static final int Relativelayout=0x7f090000;
+        public static final int action_settings=0x7f09000d;
+        public static final int bt_calculate=0x7f09000c;
+        public static final int bt_newMatiere=0x7f09000a;
+        public static final int bt_newNote=0x7f09000b;
+        public static final int coefMatiere=0x7f090002;
+        public static final int colNameMatiere=0x7f090008;
+        public static final int edtNote=0x7f090005;
+        public static final int listMatiere=0x7f090004;
+        public static final int nomMatiere=0x7f090001;
+        public static final int tb_layout=0x7f090007;
+        public static final int titleHomePage=0x7f090009;
+        public static final int validMatiere=0x7f090003;
+        public static final int validNotes=0x7f090006;
     }
     public static final class layout {
-        public static final int activity_form_saisir_note=0x7f030000;
-        public static final int activity_from_saisir_matiere=0x7f030001;
-        public static final int activity_main=0x7f030002;
+        public static final int activity_add_matiere=0x7f030000;
+        public static final int activity_add_notes=0x7f030001;
+        public static final int activity_dashboard=0x7f030002;
+        public static final int activity_main=0x7f030003;
     }
     public static final class menu {
-        public static final int form_admin_menu=0x7f070000;
-        public static final int form_admin_modifier_note=0x7f070001;
-        public static final int form_admin_saisir_eleve=0x7f070002;
-        public static final int form_admin_saisir_note=0x7f070003;
-        public static final int form_administrator=0x7f070004;
-        public static final int form_student=0x7f070005;
-        public static final int from_admin_saisir_matiere=0x7f070006;
-        public static final int main=0x7f070007;
+        public static final int add_matiere=0x7f080000;
+        public static final int add_notes=0x7f080001;
+        public static final int dashboard=0x7f080002;
+        public static final int main=0x7f080003;
     }
     public static final class string {
-        public static final int action_settings=0x7f05000e;
+        public static final int action_settings=0x7f060010;
         /**  Global Parameters 
          */
-        public static final int app_name=0x7f05000d;
-        public static final int btConfirm=0x7f050002;
-        public static final int hello_world=0x7f05000f;
-        /**  Page Formulaire Error 
-         */
-        public static final int linkReturnInitialForm=0x7f050003;
-        public static final int newMatiere=0x7f05000b;
-        public static final int newMatiereCoef=0x7f05000c;
-        public static final int newNote=0x7f05000a;
+        public static final int app_name=0x7f06000f;
+        public static final int hello_world=0x7f060014;
+        public static final int linkShowMoyenne=0x7f060001;
+        public static final int modifNote=0x7f060008;
+        public static final int newCommentaire=0x7f06000b;
+        public static final int newMatiere=0x7f06000c;
+        public static final int newMatiereCoef=0x7f06000d;
+        public static final int newNote=0x7f06000a;
+        public static final int newStudent=0x7f06000e;
+        public static final int titleCommentaire=0x7f060009;
         /**  Page Global 
          */
-        public static final int titleHomePage=0x7f050000;
-        public static final int titleHomePageAccount=0x7f050001;
+        public static final int titleHomePage=0x7f060000;
         /**  Pages Administrateur 
          */
-        public static final int titleMainPageAdmin=0x7f050006;
-        public static final int titleMatiere=0x7f050008;
-        public static final int titleNote=0x7f050007;
-        /**  Page Consulter Note - Etudiant 
- Page Voir Moyenne - Etudiant 
+        public static final int titleMainPageAdmin=0x7f060004;
+        public static final int titleMatiere=0x7f060006;
+        public static final int titleNote=0x7f060005;
+        /**  Page Voir Moyenne - Etudiant 
          */
-        public static final int titleShowMoyenne=0x7f050004;
-        public static final int title_activity_consult_note_student=0x7f050012;
-        public static final int title_activity_form_admin_menu=0x7f050014;
-        public static final int title_activity_form_admin_saisir_note=0x7f050013;
-        public static final int title_activity_form_administrator=0x7f050010;
-        public static final int title_activity_form_student=0x7f050011;
-        public static final int title_activity_from_admin_saisir_matiere=0x7f050015;
-        public static final int txtMoyenne=0x7f050005;
-        public static final int voirNotes=0x7f050009;
+        public static final int titleShowMoyenne=0x7f060002;
+        public static final int titleStudent=0x7f060007;
+        public static final int title_activity_add_matiere=0x7f060011;
+        public static final int title_activity_add_notes=0x7f060015;
+        public static final int title_activity_dashboard=0x7f060013;
+        public static final int txtMoyenne=0x7f060003;
+        public static final int valid=0x7f060012;
     }
     public static final class style {
         /** 
@@ -111,10 +126,14 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
+        public static final int custom_bt=0x7f070002;
+        public static final int custom_bt_small=0x7f070003;
+        public static final int custom_style_layout=0x7f070005;
+        public static final int custom_title_view=0x7f070004;
     }
 }

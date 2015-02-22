@@ -1,1 +1,0 @@
-INDEX VERSION 1.126+C:\Users\Navi\Documents\GitHub\Moyenne\Moyenne\MaMoyenne\.metadata\.plugins\org.eclipse.jdt.core

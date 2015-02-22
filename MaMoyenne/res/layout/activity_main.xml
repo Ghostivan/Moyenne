@@ -1,52 +1,49 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relativelayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+	android:layout_height="match_parent"
+    style="@style/custom_style_layout"
     tools:context="esgi.directmoyenne.MainActivity" >
 
     <TextView
         android:id="@+id/titleHomePage"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="@string/titleHomePage" />
+        android:text="@string/titleHomePage"
+        style="@style/custom_title_view" />
 
     <Button
-        android:id="@+id/newNote"
-        android:layout_width="wrap_content"
+        android:id="@+id/bt_newMatiere"
+        style="@style/custom_bt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/newMatiere"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/consultNotes"
-        android:layout_marginBottom="141dp"
-        android:onClick="sendFormNote"
-        android:text="@string/titleNote" />
+        android:layout_below="@+id/titleHomePage"
+        android:onClick="initNewMatiere"
+        android:text="@string/newMatiere"
+    	android:drawableLeft="@drawable/matiere" />
 
     <Button
-        android:id="@+id/newMatiere"
-        android:layout_width="wrap_content"
+        android:id="@+id/bt_newNote"
+        style="@style/custom_bt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/newNote"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
-        android:onClick="sendFormMatiere"
-        android:text="@string/titleMatiere" />
-
-    <Button
-        android:id="@+id/consultNotes"
-        android:layout_width="wrap_content"
+        android:layout_below="@+id/bt_newMatiere"
+        android:onClick="initNewNotes"
+        android:text="@string/newNote"
+    	android:drawableLeft="@drawable/notes" />
+    
+	<Button
+        android:id="@+id/bt_calculate"
+        style="@style/custom_bt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/newMatiere"
-        android:layout_alignLeft="@+id/newMatiere"
-        android:layout_alignRight="@+id/newMatiere"
-        android:layout_marginBottom="18dp"
-        android:onClick="sendFormModifNote"
-        android:text="@string/voirNotes" />
-
+        android:layout_below="@+id/bt_newNote"
+        android:onClick="initDashBoard"
+        android:text="@string/txtMoyenne" 
+        android:drawableLeft="@drawable/calcul" />
+        
+	
 </RelativeLayout>
