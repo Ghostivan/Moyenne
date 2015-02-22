@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relativelayout"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    style="@style/custom_style_layout"
+    tools:context="esgi.directmoyenne.MainActivity" >
+
+    <TextView
+        android:id="@+id/titleHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/titleHomePage"
+        style="@style/custom_title_view" />
+
+    <Button
+        android:id="@+id/bt_newMatiere"
+        style="@style/custom_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleHomePage"
+        android:onClick="initNewMatiere"
+        android:text="@string/newMatiere"
+    	android:drawableLeft="@drawable/matiere" />
+
+    <Button
+        android:id="@+id/bt_newNote"
+        style="@style/custom_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_newMatiere"
+        android:onClick="initNewNotes"
+        android:text="@string/newNote"
+    	android:drawableLeft="@drawable/notes" />
+    
+	<Button
+        android:id="@+id/bt_calculate"
+        style="@style/custom_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_newNote"
+        android:onClick="initDashBoard"
+        android:text="@string/txtMoyenne" 
+        android:drawableLeft="@drawable/calcul" />
+	
+	<Button
+        android:id="@+id/bt_deleteAll"
+        style="@style/custom_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_calculate"
+        android:onClick="deleteAll"
+        android:text="@string/txtDelete" 
+        android:drawableLeft="@drawable/delete" />
+        
+	
+</RelativeLayout>

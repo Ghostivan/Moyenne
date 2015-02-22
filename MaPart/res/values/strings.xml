@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Page Global -->
+    <string name="titleHomePage"><h2>Direct Moyenne</h2></string>
+    <string name="titleNewMatiere"><h2>Nouvelle Matière</h2></string>
+    <string name="titleNewNote"><h2>Nouvelle Note</h2></string>
+    <string name="linkShowMoyenne">Consulter votre moyenne</string>
+    <!-- Page Voir Moyenne - Etudiant -->
+    <string name="titleShowMoyenne"><b>Moyenne actuelle de </b></string>
+    <string name="txtMoyenne">Calculer la Moyenne</string>
+    <string name="txtDelete"> Supprimer les données </string>
+
+    <!-- Page Voir Moyenne - Etudiant -->
+	<string name="matiere">Matières</string>
+	<string name="coef">Coef.</string>
+	<string name="notes">Notes</string>
+	<string name="moyenne">Moyenne</string>
+	<string name="moyenneGenerale">Moyenne générale : </string>
+
+    <!-- Pages Administrateur -->
+    <string name="titleMainPageAdmin">Bienvenue sur votre espace</string>
+    <string name="titleNote">Saisir une note</string>
+    <string name="titleMatiere">Saisir une matière</string>
+    <string name="modifNote">Modifier une note</string>
+    <string name="titleCommentaire">Saisir un commentaire</string>
+    <string name="newNote">Nouvelle note</string>
+    <string name="newCommentaire">Ecrire le commentaire dans cette zone</string>
+    <string name="newMatiere">Nouvelle matière</string>
+    <string name="newMatiereCoef">Nouveau coefficient</string>
+
+    <!-- Global Parameters -->
+    <string name="app_name">Direct Moyenne</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_matiere">Nouvelle Matiere</string>
+    <string name="valid">Valider</string>
+    <string name="title_activity_dashboard">Tableau de Bord</string>
+    <string name="title_activity_add_notes">Ajout Note</string>
+    <string name="parent">esgi.directmoyenne.MainActivity</string>
+</resources>
