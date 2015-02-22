@@ -11,7 +11,7 @@
     <string name="txtMoyenne">Calculer la Moyenne</string>
 
     <!-- Page Voir Moyenne - Etudiant -->
-	<string name="matiere">Matière</string>
+	<string name="matiere">Matières</string>
 	<string name="coef">Coef.</string>
 	<string name="notes">Notes</string>
 	<string name="moyenne">Moyenne</string>

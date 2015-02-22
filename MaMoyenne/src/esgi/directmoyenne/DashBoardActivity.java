@@ -3,28 +3,14 @@ package esgi.directmoyenne;
 import java.util.ArrayList;
 
 import com.example.mamoyenne.R;
-import com.example.mamoyenne.R.id;
-import com.example.mamoyenne.R.layout;
-import com.example.mamoyenne.R.menu;
-
 import esgi.modele.Matiere;
 import esgi.modele.MySQLiteHelper;
 import esgi.modele.Note;
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup.LayoutParams;
-import android.widget.ArrayAdapter;
-import android.widget.HorizontalScrollView;
 import android.widget.ListView;
-import android.widget.ScrollView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
-import android.widget.TextView;
 
 public class DashBoardActivity extends Activity {
 

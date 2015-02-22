@@ -1,10 +1,6 @@
 package esgi.directmoyenne;
 
 import com.example.mamoyenne.R;
-import com.example.mamoyenne.R.id;
-import com.example.mamoyenne.R.layout;
-import com.example.mamoyenne.R.menu;
-
 import esgi.modele.Matiere;
 import esgi.modele.MySQLiteHelper;
 import android.app.Activity;
