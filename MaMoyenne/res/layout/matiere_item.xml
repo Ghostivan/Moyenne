@@ -9,7 +9,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textSize="15dp" />
+        android:textColor="#2B9AE5"
+        android:textSize="16dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/coef"
@@ -17,22 +19,25 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:textSize="15dp" />
+        android:textColor="#2B9AE5"
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/notes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:gravity="center"
-        android:textSize="15dp" />
+        android:gravity="left"
+        android:textColor="#2B9AE5"
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/moyenne"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:gravity="center"
-        android:textSize="15dp" />
+        android:gravity="right"
+        android:textColor="#2B9AE5"
+        android:textSize="16dp" />
 
 </LinearLayout>

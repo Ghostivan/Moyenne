@@ -45,31 +45,35 @@ public final class R {
         public static final int notes=0x7f020004;
     }
     public static final class id {
-        public static final int NomCoef=0x7f090009;
-        public static final int NomMatiere=0x7f090008;
-        public static final int NomMoyenne=0x7f09000b;
-        public static final int NomNotes=0x7f09000a;
+        public static final int NomCoef=0x7f09000d;
+        public static final int NomMatiere=0x7f09000c;
+        public static final int NomMoyenne=0x7f09000f;
+        public static final int NomNotes=0x7f09000e;
         public static final int Relativelayout=0x7f090000;
-        public static final int action_settings=0x7f090018;
-        public static final int bt_calculate=0x7f090013;
-        public static final int bt_newMatiere=0x7f090011;
-        public static final int bt_newNote=0x7f090012;
-        public static final int coef=0x7f090015;
-        public static final int coefMatiere=0x7f090002;
-        public static final int edtNote=0x7f090005;
-        public static final int footer=0x7f09000c;
-        public static final int header=0x7f090007;
-        public static final int listMatiere=0x7f090004;
-        public static final int matiere=0x7f090014;
-        public static final int moyenne=0x7f090017;
-        public static final int moyenneGenerale=0x7f09000d;
-        public static final int moyenneGeneraleNote=0x7f09000e;
-        public static final int nomMatiere=0x7f090001;
-        public static final int notes=0x7f090016;
-        public static final int tb_layout=0x7f09000f;
-        public static final int titleHomePage=0x7f090010;
-        public static final int validMatiere=0x7f090003;
-        public static final int validNotes=0x7f090006;
+        public static final int action_settings=0x7f09001c;
+        public static final int bt_calculate=0x7f090017;
+        public static final int bt_newMatiere=0x7f090015;
+        public static final int bt_newNote=0x7f090016;
+        public static final int coef=0x7f090019;
+        public static final int coefMatiere=0x7f090005;
+        public static final int edtNote=0x7f090009;
+        public static final int footer=0x7f090010;
+        public static final int header=0x7f09000b;
+        public static final int linearLayout1=0x7f090002;
+        public static final int listMatiere=0x7f090008;
+        public static final int matiere=0x7f090018;
+        public static final int moyenne=0x7f09001b;
+        public static final int moyenneGenerale=0x7f090011;
+        public static final int moyenneGeneraleNote=0x7f090012;
+        public static final int nomMatiere=0x7f090004;
+        public static final int notes=0x7f09001a;
+        public static final int scrollView1=0x7f090001;
+        public static final int tb_layout=0x7f090013;
+        public static final int titleHomePage=0x7f090014;
+        public static final int titleNewMatiere=0x7f090003;
+        public static final int titleNewNote=0x7f090007;
+        public static final int validMatiere=0x7f090006;
+        public static final int validNotes=0x7f09000a;
     }
     public static final class layout {
         public static final int activity_add_matiere=0x7f030000;
@@ -85,41 +89,43 @@ public final class R {
         public static final int main=0x7f080003;
     }
     public static final class string {
-        public static final int action_settings=0x7f060013;
+        public static final int action_settings=0x7f060015;
         /**  Global Parameters 
          */
-        public static final int app_name=0x7f060012;
-        public static final int coef=0x7f060005;
-        public static final int hello_world=0x7f060017;
-        public static final int linkShowMoyenne=0x7f060001;
+        public static final int app_name=0x7f060014;
+        public static final int coef=0x7f060007;
+        public static final int hello_world=0x7f060019;
+        public static final int linkShowMoyenne=0x7f060003;
         /**  Page Voir Moyenne - Etudiant 
          */
-        public static final int matiere=0x7f060004;
-        public static final int modifNote=0x7f06000c;
-        public static final int moyenne=0x7f060007;
-        public static final int moyenneGenerale=0x7f060008;
-        public static final int newCommentaire=0x7f06000f;
-        public static final int newMatiere=0x7f060010;
-        public static final int newMatiereCoef=0x7f060011;
-        public static final int newNote=0x7f06000e;
-        public static final int notes=0x7f060006;
-        public static final int titleCommentaire=0x7f06000d;
+        public static final int matiere=0x7f060006;
+        public static final int modifNote=0x7f06000e;
+        public static final int moyenne=0x7f060009;
+        public static final int moyenneGenerale=0x7f06000a;
+        public static final int newCommentaire=0x7f060011;
+        public static final int newMatiere=0x7f060012;
+        public static final int newMatiereCoef=0x7f060013;
+        public static final int newNote=0x7f060010;
+        public static final int notes=0x7f060008;
+        public static final int titleCommentaire=0x7f06000f;
         /**  Page Global 
          */
         public static final int titleHomePage=0x7f060000;
         /**  Pages Administrateur 
          */
-        public static final int titleMainPageAdmin=0x7f060009;
-        public static final int titleMatiere=0x7f06000b;
-        public static final int titleNote=0x7f06000a;
+        public static final int titleMainPageAdmin=0x7f06000b;
+        public static final int titleMatiere=0x7f06000d;
+        public static final int titleNewMatiere=0x7f060001;
+        public static final int titleNewNote=0x7f060002;
+        public static final int titleNote=0x7f06000c;
         /**  Page Voir Moyenne - Etudiant 
          */
-        public static final int titleShowMoyenne=0x7f060002;
-        public static final int title_activity_add_matiere=0x7f060014;
-        public static final int title_activity_add_notes=0x7f060018;
-        public static final int title_activity_dashboard=0x7f060016;
-        public static final int txtMoyenne=0x7f060003;
-        public static final int valid=0x7f060015;
+        public static final int titleShowMoyenne=0x7f060004;
+        public static final int title_activity_add_matiere=0x7f060016;
+        public static final int title_activity_add_notes=0x7f06001a;
+        public static final int title_activity_dashboard=0x7f060018;
+        public static final int txtMoyenne=0x7f060005;
+        public static final int valid=0x7f060017;
     }
     public static final class style {
         /** 

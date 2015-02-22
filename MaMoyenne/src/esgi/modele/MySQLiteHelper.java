@@ -45,6 +45,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         // create fresh books table
         this.onCreate(db);
 	}
+	
 	//---------------------------------------------------------------------
    
 	/**
@@ -61,6 +62,10 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     
     private static final String[] COLUMNS_MAT = {KEY_MAT_ID,KEY_MAT_NAME,KEY_MAT_COEF};
     
+    /**
+     * Ajout d'une matière dans la BDD
+     * @param mat
+     */
 	public void addMatiere(Matiere mat){
 		Log.d("addMatiere", mat.toString());
 		// 1. get reference to writable DB
@@ -80,6 +85,11 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         db.close(); 
 	}
 	
+	/**
+	 * Renvoie les info d'une matière avec son id en paramètre
+	 * @param id
+	 * @return mat
+	 */
 	public Matiere getMatiere(int id){
 
 		// 1. get reference to readable DB
@@ -111,6 +121,12 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         // 5. return matiere
         return mat;
 	}
+	
+	/**
+	 * Renvoie les info d'une matière avec son nom en paramètre
+	 * @param name
+	 * @return mat
+	 */
 	public Matiere getMatiereByName(String name){
 
 		// 1. get reference to readable DB
@@ -142,7 +158,11 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         // 5. return matiere
         return mat;
 	}
-	// Get All matiere
+	
+	/**
+	 * Renvoie la liste des matières
+	 * @return listMat
+	 */
     public List<Matiere> getAllMatieres() {
         List<Matiere> listMat = new LinkedList<Matiere>();
 
@@ -173,7 +193,11 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         return listMat;
     }
 	
-	 // Updating single matiere
+	/**
+	 * Update la matière passé en parametre
+	 * @param mat
+	 * @return i
+	 */
     public int updateMatiere(Matiere mat) {
 
     	// 1. get reference to writable DB
@@ -197,7 +221,10 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         
     }
 
-    // Deleting single matiere
+    /**
+     * Supprime la matière envoyer en paramètre
+     * @param mat
+     */
     public void deleteMatiere(Matiere mat) {
 
     	// 1. get reference to writable DB
@@ -214,6 +241,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 		Log.d("deleteMatiere", mat.toString());
 
     }
+    
 	/**
      * CRUD NOTE (create "add", read "get", update, delete)
      */
@@ -276,6 +304,12 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         // 5. return note
         return nt;
 	}
+	
+	/**
+	 * Retourne la liste de notes par matière
+	 * @param l
+	 * @return listNt
+	 */
 	public List<Note> getNoteByIdMatiere(long l){
 		
 		List<Note> listNt = new LinkedList<Note>();
@@ -314,7 +348,10 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         return listNt;
 	}
 	
-	// Get All Books
+	/**
+	 * Retourne une liste de toutes les notes en BDD.
+	 * @return listNt
+	 */
     public List<Note> getAllNotes() {
         List<Note> listNt = new LinkedList<Note>();
 
@@ -345,7 +382,11 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         return listNt;
     }
 	
-	 // Updating single note
+	/**
+	 * Update les noate passé en paramètre
+	 * @param nt
+	 * @return i
+	 */
     public int updateNote(Note nt) {
 
     	// 1. get reference to writable DB
@@ -369,7 +410,10 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         
     }
 
-    // Deleting single note
+   /**
+    * Supprime la note passé en paramètre
+    * @param nt
+    */
     public void deleteNote(Note nt) {
 
     	// 1. get reference to writable DB

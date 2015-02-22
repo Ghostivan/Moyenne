@@ -68,7 +68,10 @@ public class Matiere {
 		this.coef = coefMatiere;
 	}
 	
-	//Calcul de la moyenne
+	/**
+	 * Calcul de la moyenne par matière
+	 * @return uneNote
+	 */
 	public float getMoyenne(){
 		
 		float uneNote = notes.get(0).getValue();
@@ -76,13 +79,18 @@ public class Matiere {
 			uneNote = uneNote + notes.get(i).getValue();
 		}
 		uneNote = uneNote/notes.size();
+		
 		return uneNote;
 	}
 	
-	//Renvoi chaine de caractere avec toute les notes séparé pas une virgule
+	/**
+	 * Renvoi chaine de caractere avec toute les notes séparé pas une virgule
+	 * @return uneNote
+	 */
 	public String getMesNotes(){
 		
 		String uneNote = "";
+		
 		for (int i=0; i<notes.size(); i++){
 			uneNote = uneNote + notes.get(i).getValue() + ", ";
 		}
@@ -90,5 +98,8 @@ public class Matiere {
 		return uneNote;	
 	}
 	
+	public String getMoyenneGenerale(){
+		return "Coucou";
+	}
 	
 }

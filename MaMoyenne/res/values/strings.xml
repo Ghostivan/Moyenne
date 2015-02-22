@@ -3,6 +3,8 @@
 
     <!-- Page Global -->
     <string name="titleHomePage"><h2>Direct Moyenne</h2></string>
+    <string name="titleNewMatiere"><h2>Nouvelle Matière</h2></string>
+    <string name="titleNewNote"><h2>Nouvelle Note</h2></string>
     <string name="linkShowMoyenne">Consulter votre moyenne</string>
     <!-- Page Voir Moyenne - Etudiant -->
     <string name="titleShowMoyenne"><b>Moyenne actuelle de </b></string>
