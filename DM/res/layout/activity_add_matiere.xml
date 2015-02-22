@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relativelayout"
+    style="@style/custom_style_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="esgi.directmoyenne.MainActivity" >
+
+	<EditText
+        android:id="@+id/nomMatiere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/titleMatiere"
+        android:layout_marginTop="40dp"
+        android:ems="10" />
+	<Spinner
+        android:id="@+id/coefMatiere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomMatiere"
+        android:width="@dimen/small_sp_width"
+        android:height="@dimen/small_sp_height"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/validMatiere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/custom_bt_small"
+        android:onClick="validMatiere"
+        android:layout_below="@+id/coefMatiere"
+        android:text="@string/valid" />
+
+ 
+
+</RelativeLayout>
