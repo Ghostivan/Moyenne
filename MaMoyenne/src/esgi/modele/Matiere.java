@@ -1,5 +1,6 @@
 package esgi.modele;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Matiere {
@@ -72,15 +73,16 @@ public class Matiere {
 	 * Calcul de la moyenne par matière
 	 * @return uneNote
 	 */
-	public float getMoyenne(){
-		
-		float uneNote = notes.get(0).getValue();
-		for (int i=1; i<notes.size(); i++){
-			uneNote = uneNote + notes.get(i).getValue();
+	public String getMoyenne(){
+		float uneNote = 0.0f;
+		for (int i=0; i<notes.size(); i++){
+			uneNote += notes.get(i).getValue();
 		}
-		uneNote = uneNote/notes.size();
-		
-		return uneNote;
+		if(notes.size() != 0){
+			return Float.toString(uneNote/notes.size());
+		}else{
+			return " ";
+		}
 	}
 	
 	/**
@@ -90,16 +92,13 @@ public class Matiere {
 	public String getMesNotes(){
 		
 		String uneNote = "";
-		
+		DecimalFormat df = new DecimalFormat();
+		df.setMaximumFractionDigits(1);
 		for (int i=0; i<notes.size(); i++){
-			uneNote = uneNote + notes.get(i).getValue() + ", ";
+			uneNote += df.format(notes.get(i).getValue()) + " ";
 		}
 		
 		return uneNote;	
-	}
-	
-	public String getMoyenneGenerale(){
-		return "Coucou";
 	}
 	
 }

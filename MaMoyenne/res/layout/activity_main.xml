@@ -57,6 +57,16 @@
                 android:drawableLeft="@drawable/calcul"
                 android:onClick="initDashBoard"
                 android:text="@string/txtMoyenne" />
+            
+            <Button
+		        android:id="@+id/bt_deleteAll"
+		        style="@style/custom_bt"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/bt_calculate"
+		        android:onClick="deleteAll"
+		        android:text="@string/txtDelete" 
+		        android:drawableLeft="@drawable/delete" />
         </LinearLayout>
     </ScrollView>
 

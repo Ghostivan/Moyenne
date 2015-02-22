@@ -22,17 +22,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
+         <activity
             android:name="esgi.directmoyenne.AddMatiereActivity"
-            android:label="@string/title_activity_add_matiere" >
+            android:label="@string/title_activity_add_matiere"
+            android:parentActivityName="@string/parent">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="@string/parent"/>
         </activity>
         <activity
             android:name="esgi.directmoyenne.DashBoardActivity"
-            android:label="@string/title_activity_dashboard" >
+            android:label="@string/title_activity_dashboard"
+            android:parentActivityName="@string/parent">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="@string/parent"/>
         </activity>
         <activity
             android:name="esgi.directmoyenne.AddNotesActivity"
-            android:label="@string/title_activity_add_notes" >
+            android:label="@string/title_activity_add_notes" 
+            android:parentActivityName="@string/parent">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="@string/parent"/>
         </activity>
     </application>
 

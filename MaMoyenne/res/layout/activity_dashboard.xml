@@ -13,49 +13,25 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-
         android:orientation="horizontal"
         android:padding="10dp" >
 
         <TextView
             android:id="@+id/NomMatiere"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/matiere"
-            android:textColor="#F08C09"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-
+            style="@style/custom_tv_title_dashboard" />
         <TextView
             android:id="@+id/NomCoef"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/coef"
-            android:textColor="#F08C09"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-
+            style="@style/custom_tv_title_dashboard" />
         <TextView
             android:id="@+id/NomNotes"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/notes"
-            android:textColor="#F08C09"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-
+            style="@style/custom_tv_title_dashboard" />
         <TextView
             android:id="@+id/NomMoyenne"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/moyenne"
-            android:textColor="#F08C09"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+            style="@style/custom_tv_title_dashboard"/>
     </LinearLayout>
 
     <LinearLayout
@@ -72,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/moyenneGenerale"
-            android:textColor="#F08C09"
+            android:textColor="@color/orange"
             android:textSize="15dp"
             android:textStyle="bold" />
 

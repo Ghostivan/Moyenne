@@ -1,8 +1,10 @@
 package esgi.directmoyenne;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import com.example.mamoyenne.R;
+
 import esgi.modele.Matiere;
 import esgi.modele.MySQLiteHelper;
 import esgi.modele.Note;
@@ -11,9 +13,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class DashBoardActivity extends Activity {
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -21,14 +23,23 @@ public class DashBoardActivity extends Activity {
 		MySQLiteHelper db = new MySQLiteHelper(this);
 		
 		ArrayList<Matiere> matiere = new ArrayList<Matiere>(db.getAllMatieres());
-		
+		ArrayList<Note> ln;
 		for (Matiere m:matiere){
-			m.setNotes(new ArrayList<Note>(db.getNoteByIdMatiere(m.getId())));
+			ln = new ArrayList<Note>(db.getNoteByIdMatiere(m.getId()));
+			m.setNotes(ln);
+			
 		}
-		
 		ArrayAdapterMatiere monAdapter = new ArrayAdapterMatiere(this, R.layout.matiere_item , matiere);
 		ListView lv = (ListView) findViewById(R.id.tb_layout);
 		lv.setAdapter(monAdapter);
+		
+		TextView moyenneGene = (TextView) findViewById(R.id.moyenneGeneraleNote);
+		moyenneGene.setText(getMoyenneGenerale(matiere));
+		setupActionBar();
+		
+	}
+	private void setupActionBar() {
+		   getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override
@@ -49,5 +60,17 @@ public class DashBoardActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
+	public String getMoyenneGenerale( ArrayList<Matiere> lm){
+		float total = 0;
+		int cptCoef = 0;
+		for(Matiere m : lm) {
+			if(m.getMoyenne() != " "){
+				cptCoef += m.getCoef();
+				total +=  Float.parseFloat(m.getMoyenne()) * m.getCoef();
+			}
+		}
+		DecimalFormat df = new DecimalFormat();
+		df.setMaximumFractionDigits(1);
+		return df.format(total/cptCoef);
+	}
 }

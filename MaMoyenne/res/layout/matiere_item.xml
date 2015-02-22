@@ -6,38 +6,19 @@
 
     <TextView
         android:id="@+id/matiere"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textColor="#2B9AE5"
-        android:textSize="16dp"
+        style="@style/custom_tv_dashboard"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/coef"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:textColor="#2B9AE5"
-        android:textSize="16dp" />
+        style="@style/custom_tv_dashboard" />
 
     <TextView
         android:id="@+id/notes"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="left"
-        android:textColor="#2B9AE5"
-        android:textSize="16dp" />
+        style="@style/custom_tv_dashboard" />
 
     <TextView
         android:id="@+id/moyenne"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="right"
-        android:textColor="#2B9AE5"
-        android:textSize="16dp" />
+        style="@style/custom_tv_dashboard" />
 
 </LinearLayout>

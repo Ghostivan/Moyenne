@@ -1,5 +1,6 @@
 package esgi.directmoyenne;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import com.example.mamoyenne.R;

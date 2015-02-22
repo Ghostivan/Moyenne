@@ -9,6 +9,7 @@
     <!-- Page Voir Moyenne - Etudiant -->
     <string name="titleShowMoyenne"><b>Moyenne actuelle de </b></string>
     <string name="txtMoyenne">Calculer la Moyenne</string>
+    <string name="txtDelete"> Supprimer les données </string>
 
     <!-- Page Voir Moyenne - Etudiant -->
 	<string name="matiere">Matières</string>
@@ -29,12 +30,11 @@
     <string name="newMatiereCoef">Nouveau coefficient</string>
 
     <!-- Global Parameters -->
-    <string name="app_name">DirectMoyenne</string>
+    <string name="app_name">Direct Moyenne</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_add_matiere">AddMatiereActivity</string>
+    <string name="title_activity_add_matiere">Nouvelle Matiere</string>
     <string name="valid">Valider</string>
-    <string name="title_activity_dashboard">DashBoardActivity</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_add_notes">AddNotesActivity</string>
-
+    <string name="title_activity_dashboard">Tableau de Bord</string>
+    <string name="title_activity_add_notes">Ajout Note</string>
+    <string name="parent">esgi.directmoyenne.MainActivity</string>
 </resources>

@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	@Override
@@ -65,7 +66,18 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
-
+	public void deleteAll(View view){
+		Button bt = (Button)findViewById(R.id.bt_deleteAll);
+		final MySQLiteHelper db = new MySQLiteHelper(this);
+		bt.setOnClickListener(new View.OnClickListener() 
+		{
+			@Override
+			public void onClick(View v) {
+				db.onUpgrade(db.getReadableDatabase(),MySQLiteHelper.DATABASE_VERSION, MySQLiteHelper.DATABASE_VERSION+1);
+				Toast.makeText(MainActivity.this, "Toutes les données ont étaient supprimés", Toast.LENGTH_LONG).show();
+			}
+		});
+	}
 //	public Context getCurrentContext(){
 //		return this;
 //	}

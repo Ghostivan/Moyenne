@@ -1,7 +1,9 @@
 package esgi.modele;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -12,7 +14,7 @@ import android.util.Log;
 public class MySQLiteHelper extends SQLiteOpenHelper {
 	
 	// Database Version
-    private static final int DATABASE_VERSION = 4;
+    public static final int DATABASE_VERSION = 4;
     // Database Name
     private static final String DATABASE_NAME = "moyennedb";
    
@@ -310,9 +312,9 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 	 * @param l
 	 * @return listNt
 	 */
-	public List<Note> getNoteByIdMatiere(long l){
+	public ArrayList<Note> getNoteByIdMatiere(long l){
 		
-		List<Note> listNt = new LinkedList<Note>();
+		ArrayList<Note> listNt = new ArrayList<Note>();
 		
 		// 1. get reference to readable DB
 		SQLiteDatabase db = this.getReadableDatabase();
