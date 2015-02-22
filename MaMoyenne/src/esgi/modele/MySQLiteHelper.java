@@ -276,8 +276,10 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         // 5. return note
         return nt;
 	}
-	public Note getNoteByIdMatiere(int id_mat){
-
+	public List<Note> getNoteByIdMatiere(long l){
+		
+		List<Note> listNt = new LinkedList<Note>();
+		
 		// 1. get reference to readable DB
 		SQLiteDatabase db = this.getReadableDatabase();
 		 
@@ -286,26 +288,30 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         		db.query(TABLE_NOTE, // a. table
         		COLUMNS_NT, // b. column names
         		" id_mat = ?", // c. selections 
-                new String[] { String.valueOf(id_mat) }, // d. selections args
+                new String[] { String.valueOf(l) }, // d. selections args
                 null, // e. group by
                 null, // f. having
                 null, // g. order by
                 null); // h. limit
         
         // 3. if we got results get the first one
-        if (cursor != null)
-            cursor.moveToFirst();
- 
-        // 4. build note object
-        Note nt = new Note();
-        nt.setId(Integer.parseInt(cursor.getString(0)));
-        nt.setIdMat(Integer.parseInt(cursor.getString(1)));
-        nt.setValue(Float.parseFloat(cursor.getString(2)));
+        Note nt = null;
+        if (cursor.moveToFirst()) {
+            do {
+            	nt = new Note();
+            	nt.setId(Integer.parseInt(cursor.getString(0)));
+            	nt.setIdMat(Integer.parseInt(cursor.getString(1)));
+            	nt.setValue(Float.parseFloat(cursor.getString(2)));
 
-		Log.d("getNoteByIdMatiere("+id_mat+")", nt.toString());
+                // Add book to books
+            	listNt.add(nt);
+            } while (cursor.moveToNext());
+        }
+        
+		Log.d("getAllNote()", listNt.toString());
 
-        // 5. return note
-        return nt;
+        // return books
+        return listNt;
 	}
 	
 	// Get All Books
@@ -370,9 +376,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         
         // 2. delete
-        db.delete(TABLE_MATIERE,
-        		KEY_NT_ID+" = ?",
-                new String[] { String.valueOf(nt.getId()) });
+        db.delete(TABLE_MATIERE, KEY_NT_ID+" = ?", new String[] { String.valueOf(nt.getId()) });
         
         // 3. close
         db.close();
