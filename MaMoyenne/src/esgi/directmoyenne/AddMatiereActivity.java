@@ -1,6 +1,7 @@
 package esgi.directmoyenne;
 
 import com.example.mamoyenne.R;
+
 import esgi.modele.Matiere;
 import esgi.modele.MySQLiteHelper;
 import android.app.Activity;
@@ -23,7 +24,7 @@ public class AddMatiereActivity extends Activity {
 		setContentView(R.layout.activity_add_matiere);
 		Spinner s = (Spinner) findViewById(R.id.coefMatiere);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, getValueCoef());
+        		android.R.layout.simple_spinner_item, getValueCoef());
         s.setAdapter(adapter);
 	}
 
@@ -46,6 +47,10 @@ public class AddMatiereActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
+	/**
+	 * Validation du nom de la matière
+	 * @param view
+	 */
 	public void validMatiere(View view){
         final MySQLiteHelper db = new MySQLiteHelper(this);
 		Button bt = (Button)findViewById(R.id.validMatiere);
@@ -66,6 +71,11 @@ public class AddMatiereActivity extends Activity {
 			}
 		});
 	}
+	
+	/**
+	 * Retourne la valeur du coef
+	 * @return values
+	 */
 	public String[] getValueCoef(){
 		String[] values = new String[13];
 		for(int i=0;i<=12;i++){
@@ -76,5 +86,20 @@ public class AddMatiereActivity extends Activity {
 			}
 		}
 		return values;
+	}
+	
+	/**
+	 * Retour au menu
+	 * @param view
+	 */
+	public void retourMenu(View view){
+		Button bt = (Button)findViewById(R.id.retourMatiere);
+		bt.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent in = new Intent(AddMatiereActivity.this,MainActivity.class);
+				startActivity(in);
+			}
+		});
 	}
 }

@@ -18,20 +18,23 @@
 
         <TextView
             android:id="@+id/NomMatiere"
-            android:text="@string/matiere"
-            style="@style/custom_tv_title_dashboard" />
+            style="@style/custom_tv_title_dashboard"
+            android:text="@string/matiere" />
+
         <TextView
             android:id="@+id/NomCoef"
-            android:text="@string/coef"
-            style="@style/custom_tv_title_dashboard" />
+            style="@style/custom_tv_title_dashboard"
+            android:text="@string/coef" />
+
         <TextView
             android:id="@+id/NomNotes"
-            android:text="@string/notes"
-            style="@style/custom_tv_title_dashboard" />
+            style="@style/custom_tv_title_dashboard"
+            android:text="@string/notes" />
+
         <TextView
             android:id="@+id/NomMoyenne"
-            android:text="@string/moyenne"
-            style="@style/custom_tv_title_dashboard"/>
+            style="@style/custom_tv_title_dashboard"
+            android:text="@string/moyenne" />
     </LinearLayout>
 
     <LinearLayout
@@ -58,6 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="15dp" />
+    
     </LinearLayout>
 
     <ListView

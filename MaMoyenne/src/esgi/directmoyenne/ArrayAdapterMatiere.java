@@ -1,6 +1,5 @@
 package esgi.directmoyenne;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import com.example.mamoyenne.R;
@@ -14,13 +13,18 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-
 public class ArrayAdapterMatiere extends ArrayAdapter<Matiere> {
 
 	Context mContext;
 	int layoutResourceId;
 	ArrayList<Matiere> data = new ArrayList<Matiere>();
 	
+	/**
+	 * Constructeur
+	 * @param mContext
+	 * @param layoutResourceId
+	 * @param data
+	 */
 	public ArrayAdapterMatiere(Context mContext, int layoutResourceId,
 			ArrayList<Matiere> data) {
 
@@ -30,10 +34,12 @@ public class ArrayAdapterMatiere extends ArrayAdapter<Matiere> {
 		this.data = data;
 	}
 
-	@Override
+	/**
+	 * Renvoie la vue
+	 */
 	public View getView(int position, View convertView, ViewGroup parent) {
 
-		//Crée la vue si jamais exister
+		//Création de la vue si elle existe pas
 		if (convertView == null) {
 			LayoutInflater inflater = ((Activity) mContext).getLayoutInflater();
 			convertView = inflater.inflate(layoutResourceId, parent, false);
@@ -42,7 +48,7 @@ public class ArrayAdapterMatiere extends ArrayAdapter<Matiere> {
 		// Récuparation de la matiere
 		Matiere matiere = data.get(position);
 
-		// get the TextView and then set the text (item name) and tag (item ID)
+		// Remplissage des textView avec les données des matières.
 		TextView textViewMatiere = (TextView) convertView.findViewById(R.id.matiere);
 		textViewMatiere.setText(matiere.getNom());
 		

@@ -16,6 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class DashBoardActivity extends Activity {
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -24,11 +25,13 @@ public class DashBoardActivity extends Activity {
 		
 		ArrayList<Matiere> matiere = new ArrayList<Matiere>(db.getAllMatieres());
 		ArrayList<Note> ln;
+		
 		for (Matiere m:matiere){
 			ln = new ArrayList<Note>(db.getNoteByIdMatiere(m.getId()));
 			m.setNotes(ln);
 			
 		}
+		
 		ArrayAdapterMatiere monAdapter = new ArrayAdapterMatiere(this, R.layout.matiere_item , matiere);
 		ListView lv = (ListView) findViewById(R.id.tb_layout);
 		lv.setAdapter(monAdapter);
@@ -38,6 +41,7 @@ public class DashBoardActivity extends Activity {
 		setupActionBar();
 		
 	}
+	
 	private void setupActionBar() {
 		   getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
@@ -60,6 +64,12 @@ public class DashBoardActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	/**
+	 * Retourne la moyenne générale
+	 * @param lm
+	 * @return moyenne général format String
+	 */
 	public String getMoyenneGenerale( ArrayList<Matiere> lm){
 		float total = 0;
 		int cptCoef = 0;
@@ -73,4 +83,5 @@ public class DashBoardActivity extends Activity {
 		df.setMaximumFractionDigits(1);
 		return df.format(total/cptCoef);
 	}
+	
 }

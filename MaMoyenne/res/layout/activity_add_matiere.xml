@@ -53,6 +53,16 @@
                 android:layout_below="@+id/coefMatiere"
                 android:onClick="validMatiere"
                 android:text="@string/valid" />
+
+            <Button
+                android:id="@+id/retourMatiere"
+                style="@style/custom_bt_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/validMatiere"
+                android:onClick="retourMenu"
+                android:text="@string/retour" />
+            
         </LinearLayout>
     </ScrollView>
 

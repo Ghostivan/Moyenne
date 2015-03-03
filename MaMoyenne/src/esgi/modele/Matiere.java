@@ -10,6 +10,12 @@ public class Matiere {
 	private int coef;
 	private ArrayList<Note> notes;
 	
+	/**
+	 * Constructeur de matiere
+	 * @param idMatiere
+	 * @param nomMatiere
+	 * @param coefMatiere
+	 */
 	public Matiere(long idMatiere, String nomMatiere, int coefMatiere) {
 		super();
 		this.id = idMatiere;
@@ -18,12 +24,51 @@ public class Matiere {
 		this.notes = new ArrayList<Note>();
 	}
 	
+	/**
+	 * Constructeur surcharger de Matere
+	 * @param idMatiere
+	 * @param nomMatiere
+	 * @param coefMatiere
+	 * @param MesNotes
+	 */
 	public Matiere(long idMatiere, String nomMatiere, int coefMatiere, ArrayList<Note> MesNotes) {
 		super();
 		this.id = idMatiere;
 		this.nom = nomMatiere;
 		this.coef= coefMatiere;
 		this.notes = MesNotes;
+	}
+	
+	/**
+	 * Calcul de la moyenne par matière
+	 * @return uneNote
+	 */
+	public String getMoyenne(){
+		float uneNote = 0.0f;
+		for (int i=0; i<notes.size(); i++){
+			uneNote += notes.get(i).getValue();
+		}
+		if(notes.size() != 0){
+			return Float.toString(uneNote/notes.size());
+		}else{
+			return " ";
+		}
+	}
+	
+	/**
+	 * Renvoi une chaine de caractere avec toute les notes séparé par un espace
+	 * @return uneNote
+	 */
+	public String getMesNotes(){
+		
+		String uneNote = "";
+		DecimalFormat df = new DecimalFormat();
+		df.setMaximumFractionDigits(1);
+		for (int i=0; i<notes.size(); i++){
+			uneNote += df.format(notes.get(i).getValue()) + " ";
+		}
+		
+		return uneNote;	
 	}
 	
 	public Matiere(String nomMatiere, int coefMatiere) {
@@ -67,38 +112,6 @@ public class Matiere {
 
 	public void setCoef(int coefMatiere) {
 		this.coef = coefMatiere;
-	}
-	
-	/**
-	 * Calcul de la moyenne par matière
-	 * @return uneNote
-	 */
-	public String getMoyenne(){
-		float uneNote = 0.0f;
-		for (int i=0; i<notes.size(); i++){
-			uneNote += notes.get(i).getValue();
-		}
-		if(notes.size() != 0){
-			return Float.toString(uneNote/notes.size());
-		}else{
-			return " ";
-		}
-	}
-	
-	/**
-	 * Renvoi chaine de caractere avec toute les notes séparé pas une virgule
-	 * @return uneNote
-	 */
-	public String getMesNotes(){
-		
-		String uneNote = "";
-		DecimalFormat df = new DecimalFormat();
-		df.setMaximumFractionDigits(1);
-		for (int i=0; i<notes.size(); i++){
-			uneNote += df.format(notes.get(i).getValue()) + " ";
-		}
-		
-		return uneNote;	
 	}
 	
 }

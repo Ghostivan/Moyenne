@@ -1,11 +1,14 @@
 package esgi.directmoyenne;
 
 import java.util.List;
+
 import com.example.mamoyenne.R;
+
 import esgi.modele.Matiere;
 import esgi.modele.MySQLiteHelper;
 import esgi.modele.Note;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -46,6 +49,11 @@ public class AddNotesActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	/**
+	 * Validation de la note
+	 * @param view
+	 */
 	public void validNotes(View view){
         final MySQLiteHelper db = new MySQLiteHelper(this);
 		Button bt = (Button)findViewById(R.id.validNotes);
@@ -66,19 +74,14 @@ public class AddNotesActivity extends Activity {
 					Note nt = new Note(mt.getId(),currNote);
 					db.addNote(nt);
 				}
-					
-				/*if(nameMat.getText().toString().length() > 0){
-					Notes ma = new Notes(nameMat.getText().toString(),Integer.parseInt(sp.getSelectedItem().toString()));
-					db.addMatiere(ma);
-						Toast.makeText(AddMatiereActivity.this, "Matière "+nameMat.getText().toString()+" avec le coefficient "+sp.getSelectedItem().toString()+"est enregistrée", Toast.LENGTH_LONG).show();
-						startActivity(new Intent(AddMatiereActivity.this,MainActivity.class));
-					
-				}else{
-					Toast.makeText(AddMatiereActivity.this, "Le nom de la matière est incorrecte", Toast.LENGTH_LONG).show();
-				}*/
 			}
 		});
 	}
+	
+	/**
+	 * Retourne la valeur de la matière
+	 * @return
+	 */
 	public String[] getValueMat(){
 		MySQLiteHelper db = new MySQLiteHelper(this);
 		List<Matiere> list = db.getAllMatieres();
@@ -89,6 +92,12 @@ public class AddNotesActivity extends Activity {
 		}
 		return tmp;
 	}
+	
+	/**
+	 * Vérification de la note
+	 * @param currNote
+	 * @return true or false
+	 */
 	public boolean verifyNote(float currNote){
 		if(currNote > 20){
 			return false;
@@ -97,5 +106,21 @@ public class AddNotesActivity extends Activity {
 		}else{
 			return true;
 		}
+	}
+	
+	
+	/**
+	 * Retour au menu
+	 * @param view
+	 */
+	public void retourMenuNote(View view){
+		Button bt = (Button)findViewById(R.id.retourNote);
+		bt.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent in = new Intent(AddNotesActivity.this,MainActivity.class);
+				startActivity(in);
+			}
+		});
 	}
 }

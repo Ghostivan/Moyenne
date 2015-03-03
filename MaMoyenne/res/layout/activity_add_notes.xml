@@ -58,6 +58,16 @@
                 android:layout_below="@+id/edtNote"
                 android:onClick="validNotes"
                 android:text="@string/valid" />
+
+            <Button
+                android:id="@+id/retourNote"
+                style="@style/custom_bt_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/validMatiere"
+                android:onClick="retourMenuNote"
+                android:text="@string/retour" />
+            
         </LinearLayout>
     </ScrollView>
 

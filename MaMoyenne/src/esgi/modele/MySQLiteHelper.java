@@ -22,7 +22,9 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);	
 	}
 
-	@Override
+	/**
+	 * Création de la base de données
+	 */
 	public void onCreate(SQLiteDatabase db) {
 		// SQL statement to create book table
 		String CREATE_MATIERE_TABLE = "CREATE TABLE Matiere ( " +

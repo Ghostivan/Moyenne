@@ -35,6 +35,10 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
+	/**
+	 * Affiche la vue : Nouvelle Matière
+	 * @param view
+	 */
 	public void initNewMatiere(View view){
 		Button bt = (Button)findViewById(R.id.bt_newMatiere);
 		bt.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +49,11 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
+	
+	/**
+	 * Affiche la vue : Nouvelle Note
+	 * @param view
+	 */
 	public void initNewNotes(View view){
 		Button bt = (Button)findViewById(R.id.bt_newNote);
 		bt.setOnClickListener(new View.OnClickListener() {
@@ -55,17 +64,26 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
+	
+	/**
+	 * Affiche la vue : Calculer la moyenne
+	 * @param view
+	 */
 	public void initDashBoard(View view){
 		Button bt = (Button)findViewById(R.id.bt_calculate);
 		bt.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent in = new Intent(MainActivity.this,DashBoardActivity.class);
-				//in.putExtra(KEY_DB, datasource.getDataSource());
 				startActivity(in);
 			}
 		});
 	}
+	
+	/**
+	 * Delete tout les matières et les notes de la BDD
+	 * @param view
+	 */
 	public void deleteAll(View view){
 		Button bt = (Button)findViewById(R.id.bt_deleteAll);
 		final MySQLiteHelper db = new MySQLiteHelper(this);
@@ -74,12 +92,9 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				db.onUpgrade(db.getReadableDatabase(),MySQLiteHelper.DATABASE_VERSION, MySQLiteHelper.DATABASE_VERSION+1);
-				Toast.makeText(MainActivity.this, "Toutes les données ont étaient supprimés", Toast.LENGTH_LONG).show();
+				Toast.makeText(MainActivity.this, "Toutes les données ont été supprimées", Toast.LENGTH_LONG).show();
 			}
 		});
 	}
-//	public Context getCurrentContext(){
-//		return this;
-//	}
 	
 }

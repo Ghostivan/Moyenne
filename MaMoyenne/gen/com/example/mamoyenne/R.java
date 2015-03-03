@@ -31,13 +31,14 @@ public final class R {
         public static final int h1=0x7f050002;
         public static final int h2=0x7f050003;
         public static final int h3=0x7f050004;
-        public static final int large_bt_height=0x7f050007;
-        public static final int large_bt_width=0x7f050006;
-        public static final int simple_text=0x7f050005;
-        public static final int small_bt_height=0x7f050009;
-        public static final int small_bt_width=0x7f050008;
-        public static final int small_sp_height=0x7f05000b;
-        public static final int small_sp_width=0x7f05000a;
+        public static final int h4=0x7f050005;
+        public static final int large_bt_height=0x7f050008;
+        public static final int large_bt_width=0x7f050007;
+        public static final int simple_text=0x7f050006;
+        public static final int small_bt_height=0x7f05000a;
+        public static final int small_bt_width=0x7f050009;
+        public static final int small_sp_height=0x7f05000c;
+        public static final int small_sp_width=0x7f05000b;
     }
     public static final class drawable {
         public static final int background_paper=0x7f020000;
@@ -48,36 +49,38 @@ public final class R {
         public static final int notes=0x7f020005;
     }
     public static final class id {
-        public static final int NomCoef=0x7f09000d;
-        public static final int NomMatiere=0x7f09000c;
-        public static final int NomMoyenne=0x7f09000f;
-        public static final int NomNotes=0x7f09000e;
+        public static final int NomCoef=0x7f09000f;
+        public static final int NomMatiere=0x7f09000e;
+        public static final int NomMoyenne=0x7f090011;
+        public static final int NomNotes=0x7f090010;
         public static final int Relativelayout=0x7f090000;
-        public static final int action_settings=0x7f09001d;
-        public static final int bt_calculate=0x7f090017;
-        public static final int bt_deleteAll=0x7f090018;
-        public static final int bt_newMatiere=0x7f090015;
-        public static final int bt_newNote=0x7f090016;
-        public static final int coef=0x7f09001a;
+        public static final int action_settings=0x7f09001f;
+        public static final int bt_calculate=0x7f090019;
+        public static final int bt_deleteAll=0x7f09001a;
+        public static final int bt_newMatiere=0x7f090017;
+        public static final int bt_newNote=0x7f090018;
+        public static final int coef=0x7f09001c;
         public static final int coefMatiere=0x7f090005;
-        public static final int edtNote=0x7f090009;
-        public static final int footer=0x7f090010;
-        public static final int header=0x7f09000b;
+        public static final int edtNote=0x7f09000a;
+        public static final int footer=0x7f090012;
+        public static final int header=0x7f09000d;
         public static final int linearLayout1=0x7f090002;
-        public static final int listMatiere=0x7f090008;
-        public static final int matiere=0x7f090019;
-        public static final int moyenne=0x7f09001c;
-        public static final int moyenneGenerale=0x7f090011;
-        public static final int moyenneGeneraleNote=0x7f090012;
+        public static final int listMatiere=0x7f090009;
+        public static final int matiere=0x7f09001b;
+        public static final int moyenne=0x7f09001e;
+        public static final int moyenneGenerale=0x7f090013;
+        public static final int moyenneGeneraleNote=0x7f090014;
         public static final int nomMatiere=0x7f090004;
-        public static final int notes=0x7f09001b;
+        public static final int notes=0x7f09001d;
+        public static final int retourMatiere=0x7f090007;
+        public static final int retourNote=0x7f09000c;
         public static final int scrollView1=0x7f090001;
-        public static final int tb_layout=0x7f090013;
-        public static final int titleHomePage=0x7f090014;
+        public static final int tb_layout=0x7f090015;
+        public static final int titleHomePage=0x7f090016;
         public static final int titleNewMatiere=0x7f090003;
-        public static final int titleNewNote=0x7f090007;
+        public static final int titleNewNote=0x7f090008;
         public static final int validMatiere=0x7f090006;
-        public static final int validNotes=0x7f09000a;
+        public static final int validNotes=0x7f09000b;
     }
     public static final class layout {
         public static final int activity_add_matiere=0x7f030000;
@@ -110,7 +113,8 @@ public final class R {
         public static final int newMatiereCoef=0x7f060014;
         public static final int newNote=0x7f060011;
         public static final int notes=0x7f060009;
-        public static final int parent=0x7f06001b;
+        public static final int parent=0x7f06001c;
+        public static final int retour=0x7f060019;
         public static final int titleCommentaire=0x7f060010;
         /**  Page Global 
          */
@@ -126,8 +130,8 @@ public final class R {
          */
         public static final int titleShowMoyenne=0x7f060004;
         public static final int title_activity_add_matiere=0x7f060017;
-        public static final int title_activity_add_notes=0x7f06001a;
-        public static final int title_activity_dashboard=0x7f060019;
+        public static final int title_activity_add_notes=0x7f06001b;
+        public static final int title_activity_dashboard=0x7f06001a;
         public static final int txtDelete=0x7f060006;
         public static final int txtMoyenne=0x7f060005;
         public static final int valid=0x7f060018;
@@ -136,11 +140,17 @@ public final class R {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
+
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -160,10 +170,11 @@ public final class R {
          */
         public static final int AppTheme=0x7f070001;
         public static final int custom_bt=0x7f070002;
-        public static final int custom_bt_small=0x7f070003;
-        public static final int custom_style_layout=0x7f070005;
-        public static final int custom_title_view=0x7f070004;
-        public static final int custom_tv_dashboard=0x7f070006;
-        public static final int custom_tv_title_dashboard=0x7f070007;
+        public static final int custom_bt_small=0x7f070004;
+        public static final int custom_bt_supr=0x7f070003;
+        public static final int custom_style_layout=0x7f070006;
+        public static final int custom_title_view=0x7f070005;
+        public static final int custom_tv_dashboard=0x7f070007;
+        public static final int custom_tv_title_dashboard=0x7f070008;
     }
 }
